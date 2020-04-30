@@ -36,11 +36,12 @@ const App = () => {
         <Movie addToSavedList={addToSavedList} />
       </Route>
 
-  //    <Route path="/update-movie/:id">
-    //    <Movie updateMovie={updateMovie} />
-      //</Route>
     </>
   );
 };
 
 export default App;
+
+// <Route path="/update-movie/:id">
+//   <Movie updateMovie={updateMovie} />
+//  </Route>

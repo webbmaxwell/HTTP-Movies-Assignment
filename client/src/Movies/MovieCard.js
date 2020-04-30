@@ -1,4 +1,5 @@
 import React from 'react';
+import UpdateForm from './UpdateForm.js';
 
 const MovieCard = props => {
   const { title, director, metascore, stars } = props.movie;
@@ -18,6 +19,7 @@ const MovieCard = props => {
           {star}
         </div>
       ))}
+      <UpdateForm />
     </div>
   );
 };
