@@ -1,7 +1,15 @@
 import React from 'react';
 
-const UpdateForm = props => {
+class UpdateForm extends React.Component {
   // const { title, director, metascore, stars } = props.movie;
+  constructor(props) {
+    super(props);
+    this.state = {
+      movieQuote: {
+        
+      }
+    }
+  }
   return (
     <form>
       <input type="text" name="title" placeholder="title" />
