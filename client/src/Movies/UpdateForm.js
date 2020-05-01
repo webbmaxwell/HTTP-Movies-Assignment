@@ -5,19 +5,34 @@ class UpdateForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      movieQuote: {
-        
+      movie: {
+        id: "",
+        title: "",
+        director: "",
+        metascore: "",
+        stars: []
       }
     }
   }
-  return (
-    <form>
-      <input type="text" name="title" placeholder="title" />
-      <input type="text" name="director" placeholder="director" />
-      <input type="text" name="metascore" placeholder="metascore" />
-      <input type="text" name="stars" placeholder="stars" />
-    </form>
-  )
-}
+
+  handleChange = e => {
+    this.setState({
+      movie: {
+        ...this.state.movie,
+        [e.target.name]: e.target.value
+      }
+    })
+  }
+
+  render() {
+    return (
+      <form>
+        <input type="text" name="title" placeholder="title" />
+        <input type="text" name="director" placeholder="director" />
+        <input type="text" name="metascore" placeholder="metascore" />
+        <input type="text" name="stars" placeholder="stars" />
+      </form>
+  )};
+};
 
 export default UpdateForm;
